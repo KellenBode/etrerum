@@ -1,0 +1,54 @@
+{
+	"name": "@sapphire/eslint-config",
+	"version": "1.0.2",
+	"description": "Standard ESLint config for Sapphire projects written in TypeScript",
+	"author": "@sapphire",
+	"license": "MIT",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"homepage": "https://github.com/sapphire-project/utilities/tree/main/packages/eslint-config",
+	"scripts": {
+		"test": "jest",
+		"prelint": "yarn test && yarn build",
+		"lint": "eslint src tests --ext ts --fix -c dist/index.js",
+		"build": "tsc -b src"
+	},
+	"peerDependencies": {
+		"@typescript-eslint/eslint-plugin": "4.x",
+		"@typescript-eslint/parser": "4.x",
+		"eslint": "7.x",
+		"eslint-config-prettier": "6.x",
+		"eslint-plugin-prettier": "3.x",
+		"prettier": "2.x",
+		"typescript": "3.x || 4.x"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sapphire-project/utilities.git",
+		"directory": "packages/eslint-config"
+	},
+	"files": [
+		"dist",
+		"!dist/tsconfig.tsbuildinfo"
+	],
+	"engines": {
+		"node": ">=12",
+		"npm": ">=6"
+	},
+	"keywords": [
+		"sapphire-project",
+		"bot",
+		"typescript",
+		"ts",
+		"yarn",
+		"discord",
+		"sapphire",
+		"standalone"
+	],
+	"bugs": {
+		"url": "https://github.com/sapphire-project/utilities/issues"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "name": "etrerum",
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "nodemon": "^2.0.13"
+  },
+  "author": "HillardHoeger",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KellenBode/etrerum.git"
+  },
+  "homepage": "https://github.com/KellenBode/etrerum.git",
+  "version": "1.0.0"
+}

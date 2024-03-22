@@ -1,0 +1,20 @@
+{
+	"out": "./docs/",
+	"readme": "./README.md",
+	"name": "Sapphire Utilities",
+	"exclude": [
+		"**/node_modules/**",
+		"**/*.test.ts",
+		"packages/**/tests/**",
+		"**/*.js",
+		"**/rollup.config.ts",
+		"packages/decorators/src/index.ts",
+		"packages/snowflake/src/index.ts",
+		"packages/utilities/src/index.ts"
+	],
+	"mode": "modules",
+	"excludeExternals": true,
+	"excludeNotExported": true,
+	"stripInternal": true,
+	"tsconfig": "./tsconfig.dev.json"
+}
